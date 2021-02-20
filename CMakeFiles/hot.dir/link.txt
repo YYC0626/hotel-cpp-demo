@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/hot.dir/main.cpp.o -o hot  src/libPKG_SRC.a 

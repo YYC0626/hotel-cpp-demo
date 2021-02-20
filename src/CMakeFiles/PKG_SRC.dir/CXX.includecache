@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/cc/lc/hote/src/consumer.cpp
+consumer.h
+/home/cc/lc/hote/src/consumer.h
+
 /home/cc/lc/hote/src/consumer.h
 person.h
 /home/cc/lc/hote/src/person.h
-
-/home/cc/lc/hote/src/main.cpp
-iostream
--
-consumer.h
-/home/cc/lc/hote/src/consumer.h
-waiter.h
-/home/cc/lc/hote/src/waiter.h
-manager.h
-/home/cc/lc/hote/src/manager.h
 
 /home/cc/lc/hote/src/manager.cpp
 manager.h
@@ -28,9 +22,17 @@ manager.h
 person.h
 /home/cc/lc/hote/src/person.h
 
+/home/cc/lc/hote/src/person.cpp
+person.h
+/home/cc/lc/hote/src/person.h
+
 /home/cc/lc/hote/src/person.h
 iostream
 -
+
+/home/cc/lc/hote/src/waiter.cpp
+waiter.h
+/home/cc/lc/hote/src/waiter.h
 
 /home/cc/lc/hote/src/waiter.h
 person.h
