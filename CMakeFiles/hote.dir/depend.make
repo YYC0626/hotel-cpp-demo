@@ -7,8 +7,18 @@ CMakeFiles/hote.dir/src/consumer.cpp.o: src/person.h
 
 CMakeFiles/hote.dir/src/main.cpp.o: src/consumer.h
 CMakeFiles/hote.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/hote.dir/src/main.cpp.o: src/manager.h
 CMakeFiles/hote.dir/src/main.cpp.o: src/person.h
+CMakeFiles/hote.dir/src/main.cpp.o: src/waiter.h
+
+CMakeFiles/hote.dir/src/manager.cpp.o: src/manager.cpp
+CMakeFiles/hote.dir/src/manager.cpp.o: src/manager.h
+CMakeFiles/hote.dir/src/manager.cpp.o: src/person.h
 
 CMakeFiles/hote.dir/src/person.cpp.o: src/person.cpp
 CMakeFiles/hote.dir/src/person.cpp.o: src/person.h
+
+CMakeFiles/hote.dir/src/waiter.cpp.o: src/person.h
+CMakeFiles/hote.dir/src/waiter.cpp.o: src/waiter.cpp
+CMakeFiles/hote.dir/src/waiter.cpp.o: src/waiter.h
 

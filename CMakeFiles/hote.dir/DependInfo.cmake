@@ -6,7 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/cc/lc/hote/src/consumer.cpp" "/home/cc/lc/hote/CMakeFiles/hote.dir/src/consumer.cpp.o"
   "/home/cc/lc/hote/src/main.cpp" "/home/cc/lc/hote/CMakeFiles/hote.dir/src/main.cpp.o"
+  "/home/cc/lc/hote/src/manager.cpp" "/home/cc/lc/hote/CMakeFiles/hote.dir/src/manager.cpp.o"
   "/home/cc/lc/hote/src/person.cpp" "/home/cc/lc/hote/CMakeFiles/hote.dir/src/person.cpp.o"
+  "/home/cc/lc/hote/src/waiter.cpp" "/home/cc/lc/hote/CMakeFiles/hote.dir/src/waiter.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
