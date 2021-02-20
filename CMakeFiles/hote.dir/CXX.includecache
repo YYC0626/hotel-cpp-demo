@@ -15,8 +15,24 @@ iostream
 -
 consumer.h
 /home/cc/lc/hote/src/consumer.h
+waiter.h
+/home/cc/lc/hote/src/waiter.h
+manager.h
+/home/cc/lc/hote/src/manager.h
+
+/home/cc/lc/hote/src/manager.cpp
+manager.h
+/home/cc/lc/hote/src/manager.h
+
+/home/cc/lc/hote/src/manager.h
+person.h
+/home/cc/lc/hote/src/person.h
 
 /home/cc/lc/hote/src/person.h
 iostream
 -
+
+/home/cc/lc/hote/src/waiter.h
+person.h
+/home/cc/lc/hote/src/person.h
 

@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hote.dir/src/consumer.cpp.o"
   "CMakeFiles/hote.dir/src/main.cpp.o"
+  "CMakeFiles/hote.dir/src/manager.cpp.o"
   "CMakeFiles/hote.dir/src/person.cpp.o"
+  "CMakeFiles/hote.dir/src/waiter.cpp.o"
   "hote"
   "hote.pdb"
 )

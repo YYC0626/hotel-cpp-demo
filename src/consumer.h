@@ -2,6 +2,12 @@
 #define     CONSUMER_H 
 
 #include"person.h"
+/*
+ *  私有属性：
+ *      是否vip
+ *      积分
+ *      余额
+ */ 
 
 class Consumer : public Person {
 

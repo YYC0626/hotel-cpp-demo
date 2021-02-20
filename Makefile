@@ -196,6 +196,33 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/manager.o: src/manager.cpp.o
+
+.PHONY : src/manager.o
+
+# target to build an object file
+src/manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/manager.cpp.o
+.PHONY : src/manager.cpp.o
+
+src/manager.i: src/manager.cpp.i
+
+.PHONY : src/manager.i
+
+# target to preprocess a source file
+src/manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/manager.cpp.i
+.PHONY : src/manager.cpp.i
+
+src/manager.s: src/manager.cpp.s
+
+.PHONY : src/manager.s
+
+# target to generate assembly for a file
+src/manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/manager.cpp.s
+.PHONY : src/manager.cpp.s
+
 src/person.o: src/person.cpp.o
 
 .PHONY : src/person.o
@@ -223,6 +250,33 @@ src/person.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/person.cpp.s
 .PHONY : src/person.cpp.s
 
+src/waiter.o: src/waiter.cpp.o
+
+.PHONY : src/waiter.o
+
+# target to build an object file
+src/waiter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/waiter.cpp.o
+.PHONY : src/waiter.cpp.o
+
+src/waiter.i: src/waiter.cpp.i
+
+.PHONY : src/waiter.i
+
+# target to preprocess a source file
+src/waiter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/waiter.cpp.i
+.PHONY : src/waiter.cpp.i
+
+src/waiter.s: src/waiter.cpp.s
+
+.PHONY : src/waiter.s
+
+# target to generate assembly for a file
+src/waiter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/waiter.cpp.s
+.PHONY : src/waiter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,9 +292,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/manager.o"
+	@echo "... src/manager.i"
+	@echo "... src/manager.s"
 	@echo "... src/person.o"
 	@echo "... src/person.i"
 	@echo "... src/person.s"
+	@echo "... src/waiter.o"
+	@echo "... src/waiter.i"
+	@echo "... src/waiter.s"
 .PHONY : help
 
 
