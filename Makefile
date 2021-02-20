@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = /home/cc/lc/hote
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/opt/cmake-3.18.5/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -96,6 +85,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/opt/cmake-3.18.5/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,152 +130,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hote
+# Target rules for targets named hot
 
 # Build rule for target.
-hote: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hote
-.PHONY : hote
+hot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hot
+.PHONY : hot
 
 # fast build rule for target.
-hote/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/build
-.PHONY : hote/fast
+hot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot.dir/build.make CMakeFiles/hot.dir/build
+.PHONY : hot/fast
 
-src/consumer.o: src/consumer.cpp.o
+#=============================================================================
+# Target rules for targets named PKG_SRC
 
-.PHONY : src/consumer.o
+# Build rule for target.
+PKG_SRC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PKG_SRC
+.PHONY : PKG_SRC
 
-# target to build an object file
-src/consumer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/consumer.cpp.o
-.PHONY : src/consumer.cpp.o
+# fast build rule for target.
+PKG_SRC/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/PKG_SRC.dir/build.make src/CMakeFiles/PKG_SRC.dir/build
+.PHONY : PKG_SRC/fast
 
-src/consumer.i: src/consumer.cpp.i
+main.o: main.cpp.o
 
-.PHONY : src/consumer.i
-
-# target to preprocess a source file
-src/consumer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/consumer.cpp.i
-.PHONY : src/consumer.cpp.i
-
-src/consumer.s: src/consumer.cpp.s
-
-.PHONY : src/consumer.s
-
-# target to generate assembly for a file
-src/consumer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/consumer.cpp.s
-.PHONY : src/consumer.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
+.PHONY : main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot.dir/build.make CMakeFiles/hot.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-src/main.i: src/main.cpp.i
+main.i: main.cpp.i
 
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/manager.o: src/manager.cpp.o
-
-.PHONY : src/manager.o
-
-# target to build an object file
-src/manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/manager.cpp.o
-.PHONY : src/manager.cpp.o
-
-src/manager.i: src/manager.cpp.i
-
-.PHONY : src/manager.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/manager.cpp.i
-.PHONY : src/manager.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot.dir/build.make CMakeFiles/hot.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/manager.s: src/manager.cpp.s
+main.s: main.cpp.s
 
-.PHONY : src/manager.s
-
-# target to generate assembly for a file
-src/manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/manager.cpp.s
-.PHONY : src/manager.cpp.s
-
-src/person.o: src/person.cpp.o
-
-.PHONY : src/person.o
-
-# target to build an object file
-src/person.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/person.cpp.o
-.PHONY : src/person.cpp.o
-
-src/person.i: src/person.cpp.i
-
-.PHONY : src/person.i
-
-# target to preprocess a source file
-src/person.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/person.cpp.i
-.PHONY : src/person.cpp.i
-
-src/person.s: src/person.cpp.s
-
-.PHONY : src/person.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/person.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/person.cpp.s
-.PHONY : src/person.cpp.s
-
-src/waiter.o: src/waiter.cpp.o
-
-.PHONY : src/waiter.o
-
-# target to build an object file
-src/waiter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/waiter.cpp.o
-.PHONY : src/waiter.cpp.o
-
-src/waiter.i: src/waiter.cpp.i
-
-.PHONY : src/waiter.i
-
-# target to preprocess a source file
-src/waiter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/waiter.cpp.i
-.PHONY : src/waiter.cpp.i
-
-src/waiter.s: src/waiter.cpp.s
-
-.PHONY : src/waiter.s
-
-# target to generate assembly for a file
-src/waiter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/src/waiter.cpp.s
-.PHONY : src/waiter.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot.dir/build.make CMakeFiles/hot.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -285,22 +190,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hote"
-	@echo "... src/consumer.o"
-	@echo "... src/consumer.i"
-	@echo "... src/consumer.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/manager.o"
-	@echo "... src/manager.i"
-	@echo "... src/manager.s"
-	@echo "... src/person.o"
-	@echo "... src/person.i"
-	@echo "... src/person.s"
-	@echo "... src/waiter.o"
-	@echo "... src/waiter.i"
-	@echo "... src/waiter.s"
+	@echo "... PKG_SRC"
+	@echo "... hot"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

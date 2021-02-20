@@ -1,3 +1,6 @@
-/home/cc/lc/hote/CMakeFiles/edit_cache.dir
 /home/cc/lc/hote/CMakeFiles/rebuild_cache.dir
-/home/cc/lc/hote/CMakeFiles/hote.dir
+/home/cc/lc/hote/CMakeFiles/edit_cache.dir
+/home/cc/lc/hote/CMakeFiles/hot.dir
+/home/cc/lc/hote/src/CMakeFiles/rebuild_cache.dir
+/home/cc/lc/hote/src/CMakeFiles/edit_cache.dir
+/home/cc/lc/hote/src/CMakeFiles/PKG_SRC.dir

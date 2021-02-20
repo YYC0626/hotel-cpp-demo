@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPKG_SRC.a CMakeFiles/PKG_SRC.dir/consumer.cpp.o CMakeFiles/PKG_SRC.dir/manager.cpp.o CMakeFiles/PKG_SRC.dir/person.cpp.o CMakeFiles/PKG_SRC.dir/waiter.cpp.o
+/usr/bin/ranlib libPKG_SRC.a

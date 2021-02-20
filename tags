@@ -341,6 +341,9 @@ HEX	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	558;"	d	file:
 HEX	CMakeFiles/3.18.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	543;"	d	file:
 ID_VOID_MAIN	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 IsVIP	src/consumer.cpp	/^void Consumer::IsVIP() {$/;"	f	class:Consumer
+MANAGER_H	src/manager.h	2;"	d
+Manager	src/manager.h	/^    Manager(string _name, string _phone, int _age) : Person(_name, _phone, _age) {$/;"	f	class:Manager
+Manager	src/manager.h	/^class Manager : public Person {$/;"	c
 PERSON_H	src/person.h	2;"	d
 PLATFORM_ID	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	339;"	d	file:
 PLATFORM_ID	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	342;"	d	file:
@@ -444,10 +447,15 @@ STRINGIFY	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	335;"	d	file:
 STRINGIFY	CMakeFiles/3.18.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	320;"	d	file:
 STRINGIFY_HELPER	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	334;"	d	file:
 STRINGIFY_HELPER	CMakeFiles/3.18.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	319;"	d	file:
+WAITER_H	src/waiter.h	2;"	d
+Waiter	src/waiter.cpp	/^Waiter::Waiter(string _name, string _phone, int _age, int _number, int _salary) : Person(_name, _phone, _age), number(_number), salary(_salary) {$/;"	f	class:Waiter
+Waiter	src/waiter.h	/^    Waiter(string _name, string _phone, int _age) : Person(_name, _phone, _age) {}$/;"	f	class:Waiter
+Waiter	src/waiter.h	/^class Waiter : public Person {$/;"	c
 age	src/person.h	/^    int     age;$/;"	m	class:Person
 balance	src/consumer.h	/^    int     balance = 0;$/;"	m	class:Consumer
 const	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
 credit	src/consumer.h	/^    int     credit = 0;$/;"	m	class:Consumer
+credit	src/waiter.h	/^    int credit = 0;$/;"	m	class:Waiter
 info_arch	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_arch	CMakeFiles/3.18.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_compiler	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
@@ -472,12 +480,21 @@ main	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
 main	CMakeFiles/3.18.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	src/main.cpp	/^int main(){$/;"	f
 name	src/person.h	/^    string  name;$/;"	m	class:Person
+number	src/waiter.h	/^    int number;$/;"	m	class:Waiter
 phone	src/person.h	/^    string  phone;$/;"	m	class:Person
 qnxnto	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 qnxnto	CMakeFiles/3.18.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+salary	src/waiter.h	/^    int salary;$/;"	m	class:Waiter
 showBalance	src/consumer.cpp	/^void Consumer::showBalance() {$/;"	f	class:Consumer
 showCredit	src/consumer.cpp	/^void Consumer::showCredit() {$/;"	f	class:Consumer
+showCredit	src/waiter.cpp	/^void Waiter::showCredit() {$/;"	f	class:Waiter
+showEmptyRoom	src/manager.cpp	/^void Manager::showEmptyRoom() {$/;"	f	class:Manager
 showInfo	src/person.cpp	/^void Person::showInfo(string str){$/;"	f	class:Person
+showNumber	src/waiter.cpp	/^void Waiter::showNumber() {$/;"	f	class:Waiter
+showProfit	src/manager.cpp	/^void Manager::showProfit() {$/;"	f	class:Manager
+showSalary	src/waiter.cpp	/^void Waiter::showSalary() {$/;"	f	class:Waiter
 volatile	CMakeFiles/3.18.5/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 ~Consumer	src/consumer.cpp	/^Consumer::~Consumer() {$/;"	f	class:Consumer
+~Manager	src/manager.cpp	/^Manager::~Manager() {$/;"	f	class:Manager
 ~Person	src/person.cpp	/^Person::~Person(){}$/;"	f	class:Person
+~Waiter	src/waiter.cpp	/^Waiter::~Waiter(){$/;"	f	class:Waiter

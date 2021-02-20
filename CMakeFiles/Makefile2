@@ -72,46 +72,93 @@ CMAKE_BINARY_DIR = /home/cc/lc/hote
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/hote.dir/all
+all: CMakeFiles/hot.dir/all
+all: src/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/hote.dir/clean
+clean: CMakeFiles/hot.dir/clean
+clean: src/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hote.dir
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/PKG_SRC.dir/all
+
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/PKG_SRC.dir/clean
+
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hot.dir
 
 # All Build rule for target.
-CMakeFiles/hote.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/lc/hote/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target hote"
-.PHONY : CMakeFiles/hote.dir/all
+CMakeFiles/hot.dir/all: src/CMakeFiles/PKG_SRC.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot.dir/build.make CMakeFiles/hot.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot.dir/build.make CMakeFiles/hot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/lc/hote/CMakeFiles --progress-num=6,7 "Built target hot"
+.PHONY : CMakeFiles/hot.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hote.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/lc/hote/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hote.dir/all
+CMakeFiles/hot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/lc/hote/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/lc/hote/CMakeFiles 0
-.PHONY : CMakeFiles/hote.dir/rule
+.PHONY : CMakeFiles/hot.dir/rule
 
 # Convenience name for target.
-hote: CMakeFiles/hote.dir/rule
+hot: CMakeFiles/hot.dir/rule
 
-.PHONY : hote
+.PHONY : hot
 
 # clean rule for target.
-CMakeFiles/hote.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hote.dir/build.make CMakeFiles/hote.dir/clean
-.PHONY : CMakeFiles/hote.dir/clean
+CMakeFiles/hot.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot.dir/build.make CMakeFiles/hot.dir/clean
+.PHONY : CMakeFiles/hot.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/PKG_SRC.dir
+
+# All Build rule for target.
+src/CMakeFiles/PKG_SRC.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/PKG_SRC.dir/build.make src/CMakeFiles/PKG_SRC.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/PKG_SRC.dir/build.make src/CMakeFiles/PKG_SRC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cc/lc/hote/CMakeFiles --progress-num=1,2,3,4,5 "Built target PKG_SRC"
+.PHONY : src/CMakeFiles/PKG_SRC.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/PKG_SRC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/lc/hote/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/PKG_SRC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/lc/hote/CMakeFiles 0
+.PHONY : src/CMakeFiles/PKG_SRC.dir/rule
+
+# Convenience name for target.
+PKG_SRC: src/CMakeFiles/PKG_SRC.dir/rule
+
+.PHONY : PKG_SRC
+
+# clean rule for target.
+src/CMakeFiles/PKG_SRC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/PKG_SRC.dir/build.make src/CMakeFiles/PKG_SRC.dir/clean
+.PHONY : src/CMakeFiles/PKG_SRC.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

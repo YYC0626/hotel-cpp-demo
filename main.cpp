@@ -1,8 +1,8 @@
 #include<iostream>
 
-#include"consumer.h"
-#include"waiter.h"
-#include"manager.h"
+#include"src/consumer.h"
+#include"src/waiter.h"
+#include"src/manager.h"
 
 
 using namespace std;

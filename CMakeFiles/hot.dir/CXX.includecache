@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cc/lc/hote/main.cpp
+iostream
+-
+src/consumer.h
+/home/cc/lc/hote/src/consumer.h
+src/waiter.h
+/home/cc/lc/hote/src/waiter.h
+src/manager.h
+/home/cc/lc/hote/src/manager.h
+
+/home/cc/lc/hote/src/consumer.h
+person.h
+/home/cc/lc/hote/src/person.h
+
+/home/cc/lc/hote/src/manager.h
+person.h
+/home/cc/lc/hote/src/person.h
+
+/home/cc/lc/hote/src/person.h
+iostream
+-
+
+/home/cc/lc/hote/src/waiter.h
+person.h
+/home/cc/lc/hote/src/person.h
+
