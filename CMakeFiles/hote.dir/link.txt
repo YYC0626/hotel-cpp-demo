@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/hote.dir/src/consumer.cpp.o CMakeFiles/hote.dir/src/main.cpp.o CMakeFiles/hote.dir/src/person.cpp.o -o hote 

@@ -1,0 +1,3 @@
+/home/cc/lc/hote/CMakeFiles/edit_cache.dir
+/home/cc/lc/hote/CMakeFiles/rebuild_cache.dir
+/home/cc/lc/hote/CMakeFiles/hote.dir
